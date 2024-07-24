@@ -1,0 +1,66 @@
+"Games"
+{
+    "tf"
+    {
+        "Functions"
+        {
+            "CTFWeaponBase::CalcIsAttackCritical"
+            {
+                "signature"     "CalcIsAttackCritical"
+                "callconv"      "thiscall" 
+                "return"        "void"
+                "this"          "address"
+            }
+        }
+
+        "Signatures"
+        {
+            "CalcIsAttackCritical"
+            {
+                "library"       "server"
+                "linux"         "\x53\x57\x6A\x00\x68\x14\x80\x9D\x10\x68\xC8\x7E\x9D\x10\x6A\x00\x8B\xF9\xE8"
+                "windows"       "\x53\x57\x6A\x00\x68\x2A\x2A\x2A\x2A\x68\x2A\x2A\x2A\x2A\x6A\x00\x8B\xF9"
+            }
+        }
+
+        "Offsets"
+        {
+            "m_iLastCritCheckFrame"             
+            {
+                "windows"   "1792"
+            }
+            "m_bCurrentCritIsRandom"            
+            {
+                "windows"   "1759"
+            }
+            "m_flCritTime"                      
+            {
+                "windows"   "1784"
+            }
+            "m_flCritTokenBucket"               
+            {
+                "windows"   "1468"
+            }
+            "m_iCurrentSeed"                    
+            {
+                "windows"   "1796"
+            }
+            "m_nCritChecks"                     
+            {
+                "windows"   "1472"
+            }
+            "m_flLastRapidFireCritCheckTime"    
+            {
+                "windows"   "1788"
+            }
+            "m_flLastCritCheckTime"
+            {
+                "windows"   "1800"
+            }
+            "m_nCritSeedRequests"               
+            {
+                "windows"   "1476"
+            }
+        }
+    }
+}
